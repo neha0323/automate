@@ -1,0 +1,55 @@
+1) Xpath will always start with //
+2) Remember the syntax: //tag[@attribute='value']
+3) Xpath using single attribute:
+	a. Login button on FB
+	b. //input[@value='Log In']
+	c. We can use any attribute value but xpath should be unique
+	d. Always check attribute which looks static like the value of id in Login button on FB
+4) Xpath using multiple attributes with OR condition:
+	a. First Name field on FB
+	b. //input[@name='firstname' or aria-label='First name']
+	c. If any one of the attrbute value is correct then this will work
+	d. OR is case sensitive. It should be in lower case always.
+	e. We can use any number of attributes
+5) Xpath using multiple attributes with AND condition:
+	a. Date of birth field on FB
+	b. //select[@name='birthday_day' and @title='Day']
+	c. All the attributes should have correct value
+	d. AND is case sensitive. It should be in lower case always.
+	e. We can use any number of attributes
+6) Xpath using * in place of attribute or tag name:
+	a. //select[@*='birthday_day' and @*='Day']
+	b. //*[@*='birthday_day' and @*='Day']
+	c. This method is not recommended
+	d. * denotes anywhere in DOM
+	e. Email or phone example - //*[@*='email']
+7) Xpath using innertext:
+	a. If all attributes have dynamic value then go for innertext
+	b. 'Create a new account' text on FB
+	c. Syntax: //tag[text()='value']
+	d. //div[text()='Create a new account']
+	e. Use complete and exact text
+8) Xpath using partial innertext:
+	a. Text can be dynamic and can be changed by developer. If this is the case we will see, what part is atatic and will use it
+	b. Syntax: //tag[contains(text(),'value')]
+	c. //div[contains(text(),'new account')]
+9) Xpath with partial value of attribute:
+	a. Syntax: //tag[contains(@attribute,'partial value')]
+	b. //input[contains(@type,'pass')]
+10) Xpath using parent of the element:
+	a. We will use this approach if we are not able to locate an elemnt using any of the above mentioned techniques because all attributes of the element are dynamic
+	b. Always take that parent which has attributes and at least one of them is static 
+	c. Email or phone field on FB
+	d. '/' means child
+	e. //table[@role='presentation']/tbody/tr[2]/td[1]/input
+11) Xpath using child of the element:
+	a. Locate table on FB
+	b. //input[@type='email']/parent::td/parent::tr/parent::tbody/parent::table
+12) Xpath using siblings of the element:
+	a. Elements which are on same level or in other words, elements having common parent are siblings
+	b. //a[@title='Live Cricket Score']/following-sibling::a[1] - Cricbuzz
+	c. Replace 'following' with 'preceding' if element we are looking for is above the sibling
+13) Xpath using parent, child and siblings (all at once):
+	a. Locate password field on FB using username field
+	b. //input[@id='email']/parent::td/following-sibling::td[1]/input
+	c. Task - Find username through password

@@ -1,0 +1,30 @@
+1) Working on Textbox:
+	a. Keyword used - Input Text
+	b. Syntax: input text  element locator  value
+	c. To clear text - Clear Element Text
+
+2) Selecting Radio Button:
+	a. For selecting radio button, we need 2 things: group name and value
+	b. Keyword used - Select Radio Button
+	c. Select Radio Button  group name  value
+
+3) Selecting Checkbox:
+	a. Keyword used - Select Checkbox
+
+4) Clicking Link:
+	a. Keyword used - Click Link
+
+5) Clicking Button:
+	a. Keyword used - Click Button
+
+6) Working with List or Dropdown:
+	a. In dropdown, we can select only 1 value but in list we can select multiple values
+	b. We can select in 3 ways from both dropdown and list:
+		1. Syntax - Select From List By Index (index always start from 0 in python)
+		2. Syntax - Select From List By Value
+		3. Syntax - Select From List By Label
+	c. Set Selenium Speed - To add a break after each line
+
+7) Writing Keywords in Test Case:
+	a. Without Arguments
+	b. With Arguments - will learn later

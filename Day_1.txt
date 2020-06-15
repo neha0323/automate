@@ -1,0 +1,38 @@
+1) pip install robotframework
+2) pip install -U requests
+3) pip install -U robotframework-requests
+4) pip install jsonpath_rw
+5) pip install jsonpath_rw_ext
+6) pip install robotframework-jsonlibrary
+7) Web services are services which are available over web or network
+8) These provide a way to communicate between 2 machines/applications
+9) Difference between Web Application and Web Service?
+10) In web app, app is deployed on the server and end user is accessing it by hitting its URL. This means it is a communication between app and end user.
+11) In web service, we don not make direct communication between app and end user.
+12) Web services do not have UI and we can communicate through these through programming only.
+13) Makemytrip and trivago examples for web service
+14) Advantages of web service over web app:
+	a. Platform and language independent
+	b. Easy and fast integration
+	c. Allow access to multiple application
+15) Difference between API and Webservice?
+	a. Webservice always needs network for its operations but API may or may not need
+	b. APIs can be in form of libraries that are placed over your machine itself
+	c. Webservice can be used through SOAP, REST, XML RPC but API can also be used through like CURL calls
+	d. API can also be exposed in number of ways like JAR files (Apache POI), JSON over HTTP, etc.
+	e. All web services can be APIs but all APIs are not web services
+16) Difference between SOAP and REST?
+	a. SOAP is a protocol but REST is an architechtural style
+	b. Simple Object Access Protocol, Representational State Transfer
+	c. Soap defines its own security but Rest inherits security measures from the underlying transport
+	d. Soap is heavyweight but Rest is lightweight
+	e. Soap -> Only XML, Rest -> JSON, Plain Text. XML, PDF, etc.
+17) Rest Methods:
+	a. GET -> Fetch data from server
+	b. POST -> Post data on server
+	c. PUT -> Update data on server
+	d. DELETE -> Delete data from server
+	e. PATCH -> Same as PUT, but no need to send data which you do not want to update
+		1. HEAD -> Similar to GET but we will only header value in the response. Suppose we only want to validate the response code and not the body.
+		2. OPTIONS -> For knowing what kind of methods can be used on a particular API
+		3. TRACE -> When we want to know the format of request sent to the server. Used for debugging purpose.
