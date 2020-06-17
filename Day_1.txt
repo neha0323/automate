@@ -1,5 +1,5 @@
 1) pip install robotframework
-2) pip install -U requests
+2) pip install -U requestsssssssss
 3) pip install -U robotframework-requests
 4) pip install jsonpath_rw
 5) pip install jsonpath_rw_ext
